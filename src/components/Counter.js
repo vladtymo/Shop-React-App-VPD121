@@ -4,7 +4,7 @@ export function Counter() {
 
     // useState() - react hook that can put item to the state
     // return value: [0] - value, [1] - setter method
-    const [count, setCount] = useState(0);
+    let [count, setCount] = useState(0);
 
     const plus = () => {
         //++count;            // does not update a page
