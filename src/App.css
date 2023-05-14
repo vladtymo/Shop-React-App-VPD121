@@ -5,3 +5,23 @@
 .product-list {
   text-align: left;
 }
+
+nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+nav li {
+  display: inline-block;
+  margin: 4px;
+}
+
+nav li a {
+
+  background-color: rgb(124, 124, 124);
+  color: white;
+  border-radius: 6px;
+  padding: 10px;
+  text-decoration: none;
+}
