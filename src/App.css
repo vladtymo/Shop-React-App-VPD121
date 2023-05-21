@@ -25,3 +25,9 @@ nav li a {
   padding: 10px;
   text-decoration: none;
 }
+
+.CreateUser form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}

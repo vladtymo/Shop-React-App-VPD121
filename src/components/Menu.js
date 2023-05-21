@@ -11,6 +11,9 @@ export function Menu() {
                     <Link to="/users">Users</Link>
                 </li>
                 <li>
+                    <Link to="/add-user">Create User</Link>
+                </li>
+                <li>
                     <Link to="/products">Products</Link>
                 </li>
                 <li>
