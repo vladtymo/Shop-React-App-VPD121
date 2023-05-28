@@ -1,6 +1,10 @@
+import { useContext } from "react";
 import { useForm } from "react-hook-form";
+import { UsersContext } from "../contexts/users.context";
 
 export function CreateUser() {
+
+    const { add } = useContext(UsersContext);
 
     // ------- 3. using useForm React Hook
     const {
@@ -8,10 +12,6 @@ export function CreateUser() {
         handleSubmit,   // onSubmit event handler
         // add validators
     } = useForm();
-
-    const add = (user) => {
-        console.log("Added!", user);
-    }
 
     return (
         <div className="CreateUser">

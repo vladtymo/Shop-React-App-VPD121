@@ -7,13 +7,18 @@ import { UserList } from './components/UserList';
 import { USERS } from './components/users';
 import { Menu } from './components/Menu';
 import { CreateUser } from './components/CreateUser';
+import { useContext } from 'react';
+import { CounterContext } from './contexts/counter.context';
 
 function App() {
+
+  const { count } = useContext(CounterContext);
+
   return (
     <div className="App">
       <BrowserRouter>
         <header>
-          <h1>Our Logo!</h1>
+          <h1>Our Logo! {count > 0 ? '+' : ''}{count}</h1>
           <Menu />
         </header>
 

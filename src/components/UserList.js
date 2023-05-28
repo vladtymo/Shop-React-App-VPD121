@@ -1,22 +1,12 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { UserCard } from "./UserCard";
+import { UsersContext } from "../contexts/users.context";
 
 export function UserList(props) {
 
-    const [users, setUsers] = useState(props.users);
+    //const [users, setUsers] = useState(props.users);
 
-    const sortUsers = () => {
-        console.log("Sorting...");
-
-        users.sort((a, b) => (a.username > b.username) ? 1 : -1);
-        setUsers([...users]);
-
-        console.log(users);
-    }
-
-    const clearUsers = () => {
-        setUsers([]);
-    }
+    const { users, clear, sort } = useContext(UsersContext);
 
     return (
         <>
@@ -24,8 +14,8 @@ export function UserList(props) {
             <div>
                 {users.map(u => <UserCard key={u.id} {...u} />)}
             </div>
-            <button onClick={sortUsers}>Sort</button>
-            <button onClick={clearUsers}>Clear All</button>
+            <button onClick={sort}>Sort</button>
+            <button onClick={clear}>Clear All</button>
         </>
     );
 }
