@@ -10,7 +10,7 @@ export function UserList(props) {
 
     return (
         <>
-            <h2>User List</h2>
+            <h1>User List</h1>
             <div>
                 {users.map(u => <UserCard key={u.id} {...u} />)}
             </div>

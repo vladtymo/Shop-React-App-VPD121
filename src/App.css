@@ -6,7 +6,15 @@
   text-align: left;
 }
 
-nav ul {
+header {
+  padding: 6px;
+  background-color: lightblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+s nav ul {
   padding: 0;
   margin: 0;
   list-style-type: none;

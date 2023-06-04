@@ -40,7 +40,7 @@ export function ProductList() {
 
     return (
         <>
-            <h2>Product Catalog</h2>
+            <h1>Product Catalog</h1>
             <ol className="product-list">
                 {products.map(p => <li key={p.id}>{p.brand} {p.title} {p.price}$</li>)}
             </ol>

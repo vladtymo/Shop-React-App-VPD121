@@ -22,7 +22,7 @@ export function Counter() {
 
     return (
         <>
-            <h3>Counter!!!</h3>
+            <h1>Counter!!!</h1>
             <p>Value: {count}</p>
             <button onClick={increment}>Increment</button>
             <button onClick={decrement}>Decrement</button>
